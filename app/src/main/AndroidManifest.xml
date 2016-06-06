@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="daman.com.logindemo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="BloodSewa"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="BloodSewa"
+            android:theme= "@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="BloodSewa" >
+            </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login" >
+            </activity>
+        <activity
+            android:name=".Signup"
+            android:label="SignUp" >
+            </activity>
+        <activity
+            android:name=".FragmentOne"
+            android:label="Tab One"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".FragmentTwo"
+            android:label="Tab Two"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".TabA"
+            android:label="Child Tab One"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".WritePost"
+            android:label="Write Post"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".TabAminus"
+            android:label="Child Tab Two"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".TabB"
+            android:label="Child Tab One"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".TabBminus"
+            android:label="Child Tab Two"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Credits"
+            android:label="Credits"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

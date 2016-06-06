@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TabHost android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost">
+        <LinearLayout android:id="@+id/LinearLayout01"
+            android:orientation="vertical" android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TabWidget android:id="@android:id/tabs"
+                android:layout_height="wrap_content" android:layout_width="fill_parent"
+                android:background="#ff8d8eba"
+                android:showDividers="middle"
+                android:baselineAligned="false"></TabWidget>
+            <FrameLayout android:id="@android:id/tabcontent"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"></FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+</RelativeLayout>
